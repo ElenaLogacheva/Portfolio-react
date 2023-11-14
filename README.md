@@ -1,110 +1,70 @@
-# Portfolio-react
+# Getting Started with Create React App
 
-Задание 1
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-В нем создайте один функциональный компонент, который будет называться Greeting и который будет возвращать Hello World и затем отобразите этот компонент в App.
+## Available Scripts
 
-Задание 2
+In the project directory, you can run:
 
-Создайте функциональный компонент Counter в проекте из первого задания. Суть данного компонента в том, что он возвращает следующую разметку:
+### `npm start`
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/0bee4f26-8e32-4cbe-a6f4-46c0fe872dd7)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-В вашем компоненте создайте состояние с помощью useState, который называется counter. Это будет значением счетчика. Начальное значение будет 0. При нажатии на первую кнопку необходимо увеличивать значение счетчика counter на 1, при нажатии на вторую кнопку наоборот уменьшать на 1.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Задание 3
+### `npm test`
 
-Создайте в вашем проекте из первого задания компонент ShopCard. Он должен выглядеть следующим образом:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/fc8942fa-d51b-41bf-ac85-646712bae137)
+### `npm run build`
 
-Ваш компонент должен принимать на вход один пропс, который называется item, это будет объект с описанием товара. Пример:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/b362224f-fb0b-4c71-837e-e48b6f61a9e9)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-И соответственно ваш компонент ShopCard можно использовать следующим образом:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/5e457a25-a757-4d53-94fa-2ea1fed722bf)
+### `npm run eject`
 
-И так как он принимает информацию о товаре, этот компонент можно переиспользовать с разными товарами.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Задание 4
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Необходимо реализовать компонент отображающий рейтинг фильма в виде звезд:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/4782849b-57e8-49e7-8bf1-03ec7edde50c)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Для отображения рейтинга создайте компонент Stars, который принимает следующие атрибуты:
+## Learn More
 
-count — рейтинг фильмам, число, по умолчанию 0. Если рейтинг меньше 1 или больше 5, или вообще не число, то компонент не должен иметь какого-либо представления в DOM.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Звезды рейтинга должны быть представлены тегом ul с классом card-body-stars. Для отображения символа звезды внутри тега li используйте компонент Star.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Пример использования:
+### Code Splitting
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/58a61975-d33f-4d83-bc3b-1e846bba9a31)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Карточку фильма реализовать не нужно, только компонент Star.
+### Analyzing the Bundle Size
 
-Задание 5
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Необходимо реализовать один из компонентов чата — историю сообщений:
+### Making a Progressive Web App
 
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/7088d65f-256b-4504-8cbc-fb6c904c9a34)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Список сообщений, передаваемый в компонент, представляет собой массив объектов, каждый из которых
-представляет собой сообщение, которое необходимо отразить в истории. Сообщение имеет следующие свойства:
+### Advanced Configuration
 
-id — уникальный идентификатор сообщения, строка;
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-from — автор сообщения, объект;
+### Deployment
 
-type — тип сообщения, строка, варианты значений: response, message, typing;
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-time — время публикации сообщения, строка;
+### `npm run build` fails to minify
 
-text — текст сообщения, строка, может отсутствовать.
-
-Для отображения списка создайте компонент MessageHistory, который принимает следующие атрибуты:
-
-list — список сообщений, массив объектов, по умолчанию пустой массив.
-
-Если список сообщений пуст, то компонент не должен иметь какого-либо представления в DOM.
-
-Компонент должен создавать на основе списка предложений следующий HTML-код:
-
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/f70682bd-cb78-493b-b1c8-f931ac1beaf5)
-
-Где каждый тег li — сообщение из массива. Для отображения сообщений в чате необходимо использовать следующие компоненты:
-
-Message — если тип сообщения равен message,
-
-Response — если тип сообщения равен response,
-
-Typing — если тип сообщения равен typing.
-
-Все три компонента принимают следующие аргументы:
-
-from — автор сообщения, объект,
-
-message — сообщение, объект.
-
-Пример использования:
-
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/0140b7db-e452-43a9-92ea-03198b73dda8)
-
-Данные для сообщений:
-
-![image](https://github.com/ElenaLogacheva/Portfolio-react/assets/113618504/1dd12099-4756-4413-a218-a39e4445b444)
-
-Необходимо реализовать только историю сообщений, боковую панель и аватарки реализовывать не нужно. Для оформления используйте следующий CSS файл:
-
-
-
-
-
-
-
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
